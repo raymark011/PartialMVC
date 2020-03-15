@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MVC.Models.Books>
+
+@{
+    ViewData["Title"] = "Index";
+
+    var Book = new MVC.Models.Books()
+    {
+        ID = 01,
+        Title = "Java For Dummies",
+        Description = "Basics of java",
+        Publisher = "Gabby Lopez",
+        Author = "Cabriana, Raymark A.",
+        DatePublished = "03/15/2020",
+        BookFormat = "Book Bind"
+    };
+}
+
+<h2>Index</h2>
+
+<a asp-action="Index">Back to List</a>
